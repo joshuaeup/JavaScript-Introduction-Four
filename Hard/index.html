@@ -3,56 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hard</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Dom Manipulation Hard</title>
         <style>
             * {
-                padding: 0;
                 margin: 0;
-                box-sizing: border-box;
-            }
-            body {
-                background: linear-gradient(to right, #5b9c54, #56c882);
-                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
-                    sans-serif;
-                font-size: 4rem;
-                color: white;
-                text-align: center;
-                height: 100vh;
-                width: 100vw;
-                position: relative;
+                padding: 0;
             }
 
-            main {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-content: space-evenly;
-                align-content: center;
-                grid-gap: 3rem;
-                height: 100%;
-                padding: 0 3rem;
-                /* position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%); */
+            h1 {
+                color: red;
             }
 
-            .btn {
-                background-color: #81f574;
-                border: solid 1px transparent;
-                border-radius: 20px;
-                padding: 2rem;
-                font-size: 2rem;
-                color: white;
+            button {
+                padding: 10px;
+            }
+
+            .bg-red {
+                background-color: red;
+            }
+
+            .bg-white {
+                background-color: white;
             }
         </style>
     </head>
     <body>
-        <main>
-            <!-- <h1>JavaScript Introduction</h1>
-            <h3>Open Console!</h3> -->
-            <button class="btn" onclick="updateBody('red')">Turn Red</button>
-            <button class="btn" onclick="updateBody('blue')">Turn Blue</button>
-        </main>
-        <script src="./script.js"></script>
+        <button onclick="updateTheBackground('bg-red')">Turn it red!</button>
+        <button onclick="updateTheBackground('bg-white')">
+            Turn it white!
+        </button>
+        <script src="script.js"></script>
     </body>
 </html>
