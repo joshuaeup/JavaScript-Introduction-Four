@@ -1,0 +1,5 @@
+Create a function that takes an array as a param
+
+loop through array while trying differnt sum combinations 
+
+if value exceeds amount skip
